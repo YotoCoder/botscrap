@@ -7,15 +7,15 @@
     ],
     "install": {
       "include": [
-        "^requirements\\.txt$",
+        "^requirements\\.txt$"
       ]
     },
     "restart": {
       "include": [
         "\\.py$",
-
+        "^start\\.sh"
       ]
     },
     "throttle": 5000
   }
-} 
+}
