@@ -13,7 +13,7 @@
     "restart": {
       "include": [
         "\\.py$",
-        "^start\\.sh"
+        "^\\.json"
       ]
     },
     "throttle": 5000
