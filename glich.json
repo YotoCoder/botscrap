@@ -1,6 +1,4 @@
 {
   "start": "PYTHONUNBUFFERED=true python3 app.py",
-  "watch": {
-      "throttle": 5000000000000000000000
-  }
+ 
 }
