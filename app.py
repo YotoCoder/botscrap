@@ -14,7 +14,7 @@ cursor = conexion.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS tasas (ultima_tasa varchar(50) )")
 cursor.execute("CREATE TABLE IF NOT EXISTS usuarios (id_usuario varchar(50) unique)") 
 
-API_TOKEN = '864289740:AAFSutec8On7FdI5A6y3esd980LcO-p6D2Y'
+API_TOKEN = '909839284:AAEumica2jeqqy5Qbo8YTEAbn4ouPpuaLks'
 bot = telebot.TeleBot(API_TOKEN)
 
 
@@ -44,7 +44,7 @@ def get_price():
 		datos = cursor.execute("SELECT * FROM tasas")
 		dato = datos.fetchone()
 		if dato:
-			print(dato[0])
+		  nada = 'nada' 
 		else:
 			dato = ['']
 	finally:
