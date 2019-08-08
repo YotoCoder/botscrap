@@ -87,7 +87,7 @@ def update_last_price():
 		else:
 			actualizar(precio)
 
-		time.sleep(1)
+		time.sleep(60)
 
 
 
