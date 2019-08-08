@@ -44,7 +44,8 @@ def get_price():
 		datos = cursor.execute("SELECT * FROM tasas")
 		dato = datos.fetchone()
 		if dato:
-		  nada = 'nada' 
+			print( dato[0] )
+      
 		else:
 			dato = ['']
 	finally:
