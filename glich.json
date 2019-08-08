@@ -1,4 +1,7 @@
 {
+  "install": "pip3 install --user -r requirements.txt",
   "start": "PYTHONUNBUFFERED=true python3 app.py",
- 
+  "watch": {
+      "throttle": 5000000000000000000000
+  }
 }
