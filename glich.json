@@ -1,5 +1,0 @@
-{
-  
-  "start": "PYTHONUNBUFFERED=true python3 app.py",
-
-}
