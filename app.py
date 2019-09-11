@@ -1,3 +1,5 @@
+import os
+import sys
 import telebot
 from telebot import types
 import threading
@@ -6,7 +8,7 @@ import urllib
 import requests
 from lxml import html
 import sqlite3
-import sys
+
 
 
 conexion = sqlite3.connect('db_tasa_itala', check_same_thread=False)
@@ -15,7 +17,7 @@ cursor = conexion.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS tasas (ultima_tasa varchar(50) )")
 cursor.execute("CREATE TABLE IF NOT EXISTS usuarios (id_usuario varchar(50) unique)") 
 
-API_TOKEN = '909839284:AAEumica2jeqqy5Qbo8YTEAbn4ouPpuaLks'
+API_TOKEN = os.environ.get("SECRET_KEY")
 bot = telebot.TeleBot(API_TOKEN)
 
 dato = ''
